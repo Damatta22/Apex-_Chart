@@ -18,4 +18,6 @@ export const H1 = styled.p`
   margin-left: 20px;
 `;
 
-export const A = styled.p``;
+export const A = styled.p`
+  font-size: 20px;
+`;

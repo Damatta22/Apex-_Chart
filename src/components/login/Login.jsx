@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import {
   Container,
   ContainerItens,
@@ -5,20 +7,41 @@ import {
   Input,
   Button,
   SignInLink,
-} from "./Login.css.jsx";
+} from "./style.jsx";
 
 function Login() {
+  const [email, setEmail] = useState("");
+
+  const inputEmail = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const [password, setPassword] = useState("");
+
+  const inputPassword = (event) => {
+    setPassword(event.target.value);
+  };
+
   return (
     <>
       <Container>
         <ContainerItens>
-          <img></img>
           <h1>MAKE YOUR LOGIN</h1>
           <Label>Email</Label>
-          <input />
+
+          <Input
+            type="email"
+            onChange={inputEmail}
+            placeholder="Write your E-mail"
+          />
 
           <Label>Password</Label>
-          <Input />
+
+          <Input
+            type="password"
+            onChange={inputPassword}
+            placeholder="Write your password"
+          />
 
           <Button>SignIn</Button>
 

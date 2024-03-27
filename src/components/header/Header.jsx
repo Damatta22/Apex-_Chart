@@ -1,4 +1,4 @@
-import { Container, H1, A } from "./header.css";
+import { Container, H1, A, Img } from "./style";
 
 function Header() {
   return (

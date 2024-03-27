@@ -7,7 +7,9 @@ function App() {
   return (
     <>
       <GlobalStyles />
+
       <Header />
+
       <Login />
       <Chart />
     </>

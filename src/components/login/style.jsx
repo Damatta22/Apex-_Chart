@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100vw;
   height: 100vh;
-  background-color: whitesmoke;
+  background: url("../../assets/chartBackground.png") no-repeat;
   color: black;
   display: flex;
   align-items: center;
@@ -20,7 +20,12 @@ export const ContainerItens = styled.div`
 
 export const Label = styled.p``;
 
-export const Input = styled.input``;
+export const Input = styled.input`
+  width: 400px;
+  height: 30px;
+`;
+
+export const Img = styled.img``;
 
 export const Button = styled.button``;
 
