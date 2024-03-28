@@ -262,11 +262,10 @@ export default function Chart() {
 
   return (
     <>
-      <h1> Hi guys Marcelo and João</h1>
-      <h1> Ref: Database for test </h1>
-      <h2>
-        https://apexcharts.com/react-chart-demos/candlestick-charts/basic/{" "}
-      </h2>
+      <h1>
+        https://apexcharts.com/react-chart-demos/candlestick-charts/basic/
+      </h1>
+
       <ApexCharts
         options={options}
         series={series}

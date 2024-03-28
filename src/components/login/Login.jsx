@@ -1,7 +1,9 @@
 import { useState } from "react";
+import Background from "../../assets/chartBackground.png";
 
 import {
   Container,
+  Img,
   ContainerItens,
   Label,
   Input,
@@ -25,8 +27,10 @@ function Login() {
   return (
     <>
       <Container>
+        <Img src={Background} />
         <ContainerItens>
-          <h1>MAKE YOUR LOGIN</h1>
+          <h1>Hello! Make your Login!</h1>
+
           <Label>Email</Label>
 
           <Input
@@ -43,10 +47,10 @@ function Login() {
             placeholder="Write your password"
           />
 
-          <Button>SignIn</Button>
+          <Button>Sign-In</Button>
 
           <SignInLink>
-            Don´t have accounting? <a>SignUp</a>
+            Don´t have accounting? <a>Sign-In</a>
           </SignInLink>
         </ContainerItens>
       </Container>
